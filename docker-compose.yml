@@ -7,5 +7,6 @@ services:
       - 8080:80
     volumes:
       - ./nginx.conf:/etc/nginx/sites-enabled/default
+      - ./logs/nginx:/var/log/nginx
       - .:/app
     restart: always
